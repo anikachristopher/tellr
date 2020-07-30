@@ -9,7 +9,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins '*' #allows all origins
 
-    resource '*', #sllows all resources. Anyone is abole to make requests to this particular server.
+    resource '*', #sllows all resources. Anyone is able to make requests to this particular server.
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
