@@ -5,6 +5,7 @@ class CreateMachines < ActiveRecord::Migration[6.0]
       t.string :series
       t.string :dispenser
       t.float :cost
+      t.belongs_to :owner
 
       t.timestamps
     end
